@@ -29,6 +29,7 @@ require('plugin-config/comment')
 require('plugin-config/surround')
 --require('plugin-config/yank')
 require('plugin-config/undotree')
+require('plugin-config/markdownpreview')
 -- 启用主题
 vim.cmd[[colorscheme tokyonight]]
 -- vim.cmd[[colorscheme vscode]]

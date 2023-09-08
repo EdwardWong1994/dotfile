@@ -1,1 +1,3 @@
-require 'lspconfig'.marksman.setup{}
+local lspconfig = require('lspconfig')
+lspconfig.marksman.setup {
+}

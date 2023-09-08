@@ -96,5 +96,16 @@ return require('packer').startup(function(use)
     use {'numToStr/Comment.nvim'}
     use {'kylechui/nvim-surround'}
     use {"mbbill/undotree"} -- Vimscript
+    -- install markdown-preview
+    --
+    use({
+        "iamcco/markdown-preview.nvim",
+        run = function() vim.fn["mkdp#util#install"]() end,
+    })
+    --install vim-markdown
+    use{'godlygeek/tabular'}
+    use{'preservim/vim-markdown'}
+    use{'dhruvasagar/vim-table-mode'}
+    use{'mzlogin/vim-markdown-toc'}
 end)
 

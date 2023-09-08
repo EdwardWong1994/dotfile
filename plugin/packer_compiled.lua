@@ -120,7 +120,7 @@ _G.packer_plugins = {
     url = "https://github.com/hrsh7th/cmp-vsnip"
   },
   ["dashboard-nvim"] = {
-    config = { "\27LJ\2\n \4\0\0\6\0\17\0\0256\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\15\0005\3\4\0005\4\3\0=\4\5\0034\4\5\0005\5\6\0>\5\1\0045\5\a\0>\5\2\0045\5\b\0>\5\3\0045\5\t\0>\5\4\4=\4\n\0035\4\v\0=\4\f\0035\4\r\0=\4\14\3=\3\16\2B\0\2\1K\0\1\0\vconfig\1\0\0\vfooter\1\2\0\0\20To Be a Hacker!\rpackages\1\0\1\venable\2\rshortcut\1\0\4\tdesc\26Open Personal Dotfile\bkey\15Leader e e\vaction\18edit $MYVIMRC\ngroup\15find files\1\0\4\tdesc\14Find Word\bkey\15Leader g g\vaction\24Telescope live_grep\ngroup\15find files\1\0\4\tdesc\17Find Browser\bkey\15Leader f b\vaction\27Telescope find_browser\ngroup\15find files\1\0\4\tdesc\14Find File\bkey\15Leader f f\vaction\25Telescope find_files\ngroup\15find files\16week_header\1\0\0\1\0\1\venable\2\nsetup\14dashboard\frequire\0" },
+    config = { "\27LJ\2\n \4\0\0\6\0\17\0\0256\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\15\0005\3\4\0005\4\3\0=\4\5\0034\4\5\0005\5\6\0>\5\1\0045\5\a\0>\5\2\0045\5\b\0>\5\3\0045\5\t\0>\5\4\4=\4\n\0035\4\v\0=\4\f\0035\4\r\0=\4\14\3=\3\16\2B\0\2\1K\0\1\0\vconfig\1\0\0\vfooter\1\2\0\0\20To Be a Hacker!\rpackages\1\0\1\venable\2\rshortcut\1\0\4\ngroup\15find files\tdesc\26Open Personal Dotfile\bkey\15Leader e e\vaction\18edit $MYVIMRC\1\0\4\ngroup\15find files\tdesc\14Find Word\bkey\15Leader g g\vaction\24Telescope live_grep\1\0\4\ngroup\15find files\tdesc\17Find Browser\bkey\15Leader f b\vaction\27Telescope find_browser\1\0\4\ngroup\15find files\tdesc\14Find File\bkey\15Leader f f\vaction\25Telescope find_files\16week_header\1\0\0\1\0\1\venable\2\nsetup\14dashboard\frequire\0" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
@@ -161,6 +161,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/wangchenchen/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
+  ["markdown-preview.nvim"] = {
+    loaded = true,
+    path = "/Users/wangchenchen/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim",
+    url = "https://github.com/iamcco/markdown-preview.nvim"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
@@ -242,6 +247,11 @@ _G.packer_plugins = {
     path = "/Users/wangchenchen/.local/share/nvim/site/pack/packer/start/symbols-outline.nvim",
     url = "https://github.com/simrat39/symbols-outline.nvim"
   },
+  tabular = {
+    loaded = true,
+    path = "/Users/wangchenchen/.local/share/nvim/site/pack/packer/start/tabular",
+    url = "https://github.com/godlygeek/tabular"
+  },
   ["telescope-bibtex.nvim"] = {
     config = { "\27LJ\2\nK\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0'\2\3\0B\0\2\1K\0\1\0\vbibtex\19load_extension\14telescope\frequire\0" },
     loaded = true,
@@ -272,6 +282,21 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/wangchenchen/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
+  },
+  ["vim-markdown"] = {
+    loaded = true,
+    path = "/Users/wangchenchen/.local/share/nvim/site/pack/packer/start/vim-markdown",
+    url = "https://github.com/preservim/vim-markdown"
+  },
+  ["vim-markdown-toc"] = {
+    loaded = true,
+    path = "/Users/wangchenchen/.local/share/nvim/site/pack/packer/start/vim-markdown-toc",
+    url = "https://github.com/mzlogin/vim-markdown-toc"
+  },
+  ["vim-table-mode"] = {
+    loaded = true,
+    path = "/Users/wangchenchen/.local/share/nvim/site/pack/packer/start/vim-table-mode",
+    url = "https://github.com/dhruvasagar/vim-table-mode"
   },
   ["vim-vsnip"] = {
     loaded = true,

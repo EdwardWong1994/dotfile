@@ -79,6 +79,15 @@ local mappings = {
         -- c = { "<cmd>Telescope commands<CR>", "commands" },
         -- r = { "<cmd>Telescope oldfiles<CR>", "recent" },
     },
+    m={
+        name="markdown",
+        c= {"<Plug>MarkdownPreview", "markdown preview"},
+        --        t= {"<Plug>MardownPreviewStop",  "markdown preview stop"},
+        p= {"<Plug>MarkdownPreviewToggle", "markdown preview toggle" },
+        T = {"<cmd>TableModeToggle<CR>", "markdown-table" },
+        a = {"<cmd>TableModeRealign<CR>", "realign table" },
+        t ={"<cmd>GenTocGFM<CR>", "TOC"},
+    },
     g = {
         name = "GIT",
         -- ln  找到下一个改变的位置

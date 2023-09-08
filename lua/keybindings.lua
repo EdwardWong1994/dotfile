@@ -50,6 +50,9 @@ vim.api.nvim_set_keymap("v", "<<", "<<gv", {noremap = true, silent = true})
 -- 定义 symbols-outline 快捷键
 vim.api.nvim_set_keymap("n", "<leader>so", "<cmd>SymbolsOutline<CR>", {silent = true, noremap = true})
 
+--定义markdown-table-mode
+--
+vim.api.nvim_set_keymap("v", "<leader>mT", "<cmd>Tableize<CR>", {silent=true,noremap=true})
 
 -- lsp 快捷键定义
 local lsp_keybinds = {}
