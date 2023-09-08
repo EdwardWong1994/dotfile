@@ -40,6 +40,7 @@ return require('packer').startup(function(use)
         end,
         requires = {"nvim-tree/nvim-web-devicons"}
     }
+    use {"gbprod/yanky.nvim"}
     use {"folke/which-key.nvim"}
     use {"akinsho/toggleterm.nvim", tag = 'v2.*'}
     use {
@@ -51,7 +52,7 @@ return require('packer').startup(function(use)
             end,
         }}
     }
-    use { "nvim-telescope/telescope-file-browser.nvim" }
+    use {"nvim-telescope/telescope-file-browser.nvim"}
     use {'rmagatti/auto-session'}
     use {"williamboman/mason.nvim"}
     use {"williamboman/mason-lspconfig.nvim"}
@@ -75,12 +76,12 @@ return require('packer').startup(function(use)
     -- dap
     -- 用于设置代码调试等相关内容
     use {'mfussenegger/nvim-dap'}
-    use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
+    use {"rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"}}
     use {"theHamsta/nvim-dap-virtual-text", requires = {"nvim-treesitter/nvim-treesitter" , "mfussenegger/nvim-dap"}}
     use {"sakhnik/nvim-gdb", run = "./install.sh"}
     --git
     use {'lewis6991/gitsigns.nvim'}
-    use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
+    use {'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim'}
     --use {"lervag/vimtex"}
     use {'j178/leetgo'}
     -- latex plugin
@@ -92,7 +93,8 @@ return require('packer').startup(function(use)
             require 'telescope'.load_extension('bibtex')
         end,
     }
-    use {'numToStr/Comment'}
+    use {'numToStr/Comment.nvim'}
     use {'kylechui/nvim-surround'}
+    use {"mbbill/undotree"} -- Vimscript
 end)
 

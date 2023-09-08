@@ -25,7 +25,10 @@ require('plugin-config/gitsigns')
 --require("plugin-config/vimtex")
 require('plugin-config/options')
 require('plugin-config/vimtex')
---require('plugin-config/comment')
+require('plugin-config/comment')
+require('plugin-config/surround')
+--require('plugin-config/yank')
+require('plugin-config/undotree')
 -- 启用主题
 vim.cmd[[colorscheme tokyonight]]
 -- vim.cmd[[colorscheme vscode]]

@@ -51,11 +51,13 @@ local opts = {
 -- GENERAL MAPPINGS
 
 local mappings = {
+    ["u"] = { "<cmd>UndotreeToggle<CR>"           , "undo" },
     a = {
         name = "ACTIONS",
         a = { "<cmd>lua PdfAnnots()<CR>", "annotate"},
         b = { "<cmd>terminal bibexport -o %:p:r.bib %:p:r.aux<CR>", "bib export"},
         c = { "<cmd>VimtexClean<CR>"            , "clean aux" },
+        d = {  "<cmd>VimtexClean!<CR>", "clean all" },
         g = { "<cmd>e ~/.config/nvim/templates/Glossary.tex<CR>", "edit glossary"},
         l = { "<cmd>lua vim.g.cmptoggle = not vim.g.cmptoggle<CR>", "LSP"},
         p = { '<cmd>lua require("nabla").popup()<CR>', "preview symbols"},
@@ -95,15 +97,15 @@ local mappings = {
         d = { "<cmd>Gitsigns diffthis HEAD<CR>", "diff" },
     },
     --管理session
-    --s = {
-    --    name = "MANAGE SESSIONS",
-    -- ss ：存储session
-    --    s = { "<cmd>SessionManager save_current_session<CR>", "save" },
-    --sd：删除session 
-    --    d = { "<cmd>SessionManager delete_session<CR>", "delete" },
-    -- sl: 记载session
-    --    l = { "<cmd>SessionManager load_session<CR>", "load" },
-    -- },
+    l = {
+        name = "MANAGE SESSIONS",
+        -- ss ：存储session
+        s = { "<cmd>SessionSave<CR>", "session save" },
+        --sd：删除session 
+        d = { "<cmd>SessionDelete<CR>", "session delete" },
+        -- sl: 记载session
+        l = { "<cmd>SessionRestore<CR>", "session restore" },
+    },
     ---pandoc的一些快捷键
     p = {
         name = "PANDOC",
@@ -133,10 +135,12 @@ local mappings = {
         name = "latex",
         --c = { "<cmd>PackerCompile<CR>", "Compile" },
         ["c"] = { "<cmd>VimtexCompile<CR>"            , "build" },
+        ["d"]={"<cmd>update<CR><cmd>VimtexCompileSS<CR>" ,"build once" },
         ["w"] = { "<cmd>VimtexCountWords!<CR>"        , "count" },
         ["i"] = { "<cmd>VimtexTocOpen<CR>"            , "index" },
         ["q"] = { "<cmd>wqa!<CR>"                     , "quit" },
         ["v"] = { "<cmd>VimtexView<CR>"               , "view" },
+        ["t"]={"<cmd>VimtexStop<CR>" ,"termination" } ,
         --    ["w"] = { "<cmd>wa!<CR>"                      , "write" },
         p = { 
             "<cmd>read ~/.config/nvim/templates/PhilPaper.tex<CR>", 
